@@ -1,0 +1,25 @@
+{
+  "name": "mosaic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -o",
+    "dev": "postcss -u autoprefixer src/css/style.css -d dist/css -c postcss.json -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrfreitas/mosaic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrfreitas/mosaic/issues"
+  },
+  "homepage": "https://github.com/chrfreitas/mosaic#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "http-server": "^0.10.0",
+    "postcss-cli": "^4.1.1"
+  }
+}
