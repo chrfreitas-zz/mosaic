@@ -1,7 +1,9 @@
-.main {    
-    display: -webkit-box;    
-    display: -ms-flexbox;    
-    display: flex;
+.main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0;
+	padding: 0;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jc3Mvc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kscUJBQWM7SUFBZCxxQkFBYztJQUFkLGNBQWM7Q0FDakIiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1haW4geyAgICBcbiAgICBkaXNwbGF5OiBmbGV4O1xufVxuIl19 */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jc3Mvc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MscUJBQWM7Q0FBZCxxQkFBYztDQUFkLGNBQWM7Q0FDZCxVQUFVO0NBQ1YsV0FBVztDQUNYIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYWluIHtcblx0ZGlzcGxheTogZmxleDtcblx0bWFyZ2luOiAwO1xuXHRwYWRkaW5nOiAwO1xufVxuIl19 */

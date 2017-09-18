@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server -o",
-    "dev": "postcss src/**/*.css -u autoprefixer -d dist/css -c postcss.json -w"
+    "dev": "csscomb src/**/*.css && postcss src/**/*.css -u autoprefixer -d dist/css -c postcss.json -w"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/chrfreitas/mosaic#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
+    "csscomb": "^4.2.0",
     "http-server": "^0.10.0",
     "postcss-cli": "^4.1.1"
   }
