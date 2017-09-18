@@ -1,8 +1,20 @@
-.main {
-	width: 100px;
-	padding: 0;
-	position: absolute;
+html, body {
+	margin: auto;
+	height: 100%;
+}
+
+.mosaic {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.mosaic__item {
+	background-color: #ddd;
+	display: inline-block;
 	height: 100px;
-	margin: 0;
-	display: flex;
+}
+
+.mosaic__item:nth-child(odd) {
+	background-color: #eee;
 }

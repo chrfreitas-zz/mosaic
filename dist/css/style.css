@@ -1,1 +1,1 @@
-.main{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;padding:0;position:absolute;height:100px}
+html,body{margin:auto;height:100%}.mosaic{height:100%;display:grid;grid-template-columns:repeat(5,1fr)}.mosaic__item{background-color:#ddd;display:inline-block;height:100px}.mosaic__item:nth-child(odd){background-color:#eee}
