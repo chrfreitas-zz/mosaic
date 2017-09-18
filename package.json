@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -o",
-    "dev": "csscomb src/**/*.css && postcss src/**/*.css -u autoprefixer -d dist/css -c postcss.json -w"
+    "up": "http-server -o",
+    "build:css": "npm run csscomb && npm run postcss && npm run uglifycss",
+    "watch:css": "onchange 'src/css/*.css' -- npm run build:css ",
+    "csscomb": "csscomb src/**/*.css",
+    "postcss": "postcss src/**/*.css -u autoprefixer -d dist/css",
+    "uglifycss": "uglifycss dist/css/*.css --output dist/css/*.css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,8 @@
     "autoprefixer": "^7.1.4",
     "csscomb": "^4.2.0",
     "http-server": "^0.10.0",
-    "postcss-cli": "^4.1.1"
+    "onchange": "^3.2.1",
+    "postcss-cli": "^4.1.1",
+    "uglifycss": "0.0.27"
   }
 }
