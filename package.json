@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "up": "http-server -o",
-    "build:css": "npm run csscomb && npm run postcss && npm run uglifycss",
+    "build:css": "npm run postcss && npm run uglifycss",
     "watch:css": "onchange 'src/css/*.css' -- npm run build:css ",
     "csscomb": "csscomb src/**/*.css",
     "postcss": "postcss src/**/*.css -u autoprefixer -d dist/css",
