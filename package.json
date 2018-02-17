@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "up": "http-server -o",
-    "build:css": "npm run postcss && npm run uglifycss",
-    "watch:css": "onchange 'src/css/*.css' -- npm run build:css ",
+    "start": "browser-sync start -s -f './dist', 'index.html'",
+    "dev": "onchange 'src/css/*.css' -- npm run css",
+    "css": "npm run postcss && npm run uglifycss",
     "csscomb": "csscomb src/**/*.css",
     "postcss": "postcss src/**/*.css -u autoprefixer -d dist/css",
     "uglifycss": "uglifycss dist/css/*.css --output dist/css/*.css"
@@ -23,8 +23,8 @@
   "homepage": "https://github.com/chrfreitas/mosaic#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
+    "browser-sync": "^2.23.6",
     "csscomb": "^4.2.0",
-    "http-server": "^0.10.0",
     "onchange": "^3.2.1",
     "postcss-cli": "^4.1.1",
     "uglifycss": "0.0.27"
